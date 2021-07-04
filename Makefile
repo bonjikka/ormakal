@@ -15,3 +15,5 @@ mohanlal:
 
 mammooty:
 	python3 scripts/get_filmography_imdb.py https://www.imdb.com/name/nm0007123/
+fahad:
+	python3 scripts/get_filmography_imdb.py https://www.imdb.com/name/nm1335704/
