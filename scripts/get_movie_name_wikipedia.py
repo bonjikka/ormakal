@@ -16,12 +16,12 @@ table_rows = soup.find_all("tr")
 for row in table_rows:
     tds = row.findChildren(recursive=False)
     # Check if first col is year
-    if re.match(r"\d{4}", tds[0].get_text().strip()) :
-        # stop at 2020
-        if tds[0].get_text().strip() == "2020":
-            break
-        line=""
-        for col in tds:
-            line+=str(col.get_text().strip()) + ","
-        print(line)
+    # if re.match(r"\d{4}", tds[0].get_text().strip()) :
+    # stop at 2020
+    if tds[0].get_text().strip() == "2020":
+        break
+    line=""
+    for col in tds:
+        line+=str(col.get_text().strip()) + ","
+    print(line)
 

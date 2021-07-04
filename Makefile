@@ -12,3 +12,6 @@ top_movies:
 
 mohanlal:
 	python3 scripts/get_movie_name_wikipedia.py https://en.wikipedia.org/wiki/Mohanlal_filmography > character_names_mohanlal.txt
+
+mammooty:
+	python3 scripts/get_filmography_imdb.py https://www.imdb.com/name/nm0007123/
